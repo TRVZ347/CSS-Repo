@@ -3,18 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stylish-Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <fieldset>
-        <label for="firstname"> First Name</label>
+    <fieldset>  
+        <label for="firstname"> First Name:</label>
         <input type="text" id="firstname">
 
-        <label for="lastname">Last Name</label>
+        <label for="lastname">Last Name:</label>
         <input type="text" id="lastname">
 
+        <label for="email"> Email:</label>
+        <input type="text" id="email">
+        
+        <label for="password">Password</label>
+        <input type="password" id="password">
+
+        <label for="confirmpassword">Confirm Your Password</label>
+        <input type="password" id="confirmpassword">
+
     </fieldset>
-    <fieldset></fieldset>
-    <fieldset></fieldset>
+    <fieldset>
+        <legend>Account Type (reqired)</legend>
+        <label for="account">
+            <input type="radio" id="account"> Public Account
+        </label>
+        <label for="account">
+            <input type="radio" id="account"> Private Account
+        </label>
+    </fieldset>
+    <fieldset>
+        <label for="files"> Upload Your CV:
+            <input type="file" id="files">
+        </label>
+        <select name="" id="">
+            <option value="">(select one)</option>
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JavaScript</option>
+            <option value="4">Python</option>
+        </select>
+    </fieldset>
+    <label for="agreement">
+        <input type="checkbox"> I accept the <a href="#"> Terms and Conditions</a>
+    </label>
+    <input type="submit" value="Submit">
 </body>
 </html>
